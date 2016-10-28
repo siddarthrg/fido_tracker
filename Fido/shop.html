@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Satellite</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue-light_blue.min.css">  
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="animsition">
+      <!-- Header -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+        <header class="mdl-layout__header mdl-shadow--1dp bg-white">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Fido</span>
+            <!-- Spacer -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Right Menu -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"> <!-- search-->
+              <label class="mdl-button mdl-js-button mdl-button--icon"
+                     for="fixed-header-drawer-exp">
+                <i class="material-icons">search</i>
+              </label>
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="sample"
+                       id="fixed-header-drawer-exp" />
+              </div>
+            </div><!-- end of search -->
+            <a class="mdl-button mdl-js-button mdl-button--icon s-right-activator">
+              <i class="material-icons">apps</i>
+            </a>
+          </div>
+        </header>
+        <!-- Sidebar -->
+        <div class="mdl-layout__drawer">
+
+          <!-- Top -->
+          <div class="drawer-header">
+            <img src="img/user.jpg" alt="">
+          </div>
+          
+          <!-- Main Navigation -->
+          <nav class="mdl-navigation">
+            <div class="mdl-collapse first">
+                <a class="mdl-navigation__link mdl-collapse__button">
+                    
+                    <span>pet_enthusiast@email.com</span>
+                </a>
+                
+            </div>
+            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Home</span></a>
+            <a class="mdl-navigation__link animsition-link" href="profile.html"><i class="material-icons">person</i><span>Profile</span></a>
+            <a class="mdl-navigation__link animsition-link" href="profile.html"><i class="material-icons">pets</i><span>Pet Profile</span></a>
+			<a class="mdl-navigation__link animsition-link" href="vet_profile.html"><i class="material-icons">healing</i><span>Vet</span></a>
+            <a class="mdl-navigation__link animsition-link" href="shop.html"><i class="material-icons">shopping_cart</i><span>Shop</span></a>
+            <div class="drawer-separator"></div>
+            
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">settings</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Account</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="activity.html">Activity Feeds</a>
+                    <a class="mdl-navigation__link animsition-link" href="login.html">Login</a>
+                    <a class="mdl-navigation__link animsition-link" href="lockscreen.html">Lockscreen</a>
+                    <a class="mdl-navigation__link animsition-link" href="settings.html">Settings</a>
+                  </div>
+                </div>
+            </div>
+          </nav>
+        </div>
+        
+        <!-- Page Content -->
+        <main class="mdl-layout__content">
+
+          <!-- Right Sidebar -->
+          <div class="s-right from-right">
+            <div class="s-right-container">
+              <a href="#!"><i class="material-icons s-right-close">close</i></a>
+              <div class="s-right-content">
+
+                <!-- Tabs -->
+                <div class="mdl-tabs mdl-js-tabs">
+                  <div class="mdl-tabs__tab-bar">
+                      <a href="#chat-panel" class="mdl-tabs__tab is-active">
+                        <i class="material-icons mdl-collapse__icon mdl-animation--default">list</i>Chat</a>
+                      <a href="#activity-panel" class="mdl-tabs__tab">
+                        <i class="material-icons mdl-collapse__icon mdl-animation--default">trending_up</i>Activity</a>
+                  </div>
+                  <div class="mdl-tabs__panel is-active" id="chat-panel">
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-red"><span>L</span></div>
+                      <div class="contact-info">
+                        <p>Larry Red</p>
+                        <span class="light-text">I'm red colored</span>
+                        <div class="dot bg-green"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-green"><span>S</span></div>
+                      <div class="contact-info">
+                        <p>Sam Green</p>
+                        <span class="light-text">I'm too much</span>
+                        <div class="dot bg-green"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-purple"><span>G</span></div>
+                      <div class="contact-info">
+                        <p>Glen Purple</p>
+                        <span class="light-text">My favourite color</span>
+                        <div class="dot bg-red"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-light-blue"><span>B</span></div>
+                      <div class="contact-info">
+                        <p>Bob Light</p>
+                        <span class="light-text">Light blue colored</span>
+                        <div class="dot bg-green"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-red"><span>L</span></div>
+                      <div class="contact-info">
+                        <p>Larry Red</p>
+                        <span class="light-text">I'm red colored</span>
+                        <div class="dot bg-green"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-green"><span>S</span></div>
+                      <div class="contact-info">
+                        <p>Sam Green</p>
+                        <span class="light-text">I'm too much</span>
+                        <div class="dot bg-green"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-purple"><span>G</span></div>
+                      <div class="contact-info">
+                        <p>Glen Purple</p>
+                        <span class="light-text">My favourite color</span>
+                        <div class="dot bg-red"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                    <div class="contact swipeable">
+                      <div class="contact-user bg-light-blue"><span>B</span></div>
+                      <div class="contact-info">
+                        <p>Bob Light</p>
+                        <span class="light-text">Light blue colored</span>
+                        <div class="dot bg-green"></div>
+                      </div>
+                      <div class="swipe-actions inbox-message">
+                        <i class="material-icons">chat_bubble_outline</i>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="mdl-tabs__panel" id="activity-panel">
+
+                    <div class="tab-container">
+                      <div class="sidebar-settings padding-top-0"> 
+                        <span>Notifications</span>
+                        <!-- switch -->
+                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                          <input type="checkbox" id="switch-1" class="mdl-switch__input" checked />
+                          <span class="mdl-switch__label"></span>
+                        </label>
+                        <div class="clr"></div>
+                      </div>
+                      <div class="sidebar-settings"> 
+                        <span>Wi-Fi</span>
+                        <!-- switch -->
+                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                          <input type="checkbox" id="switch-2" class="mdl-switch__input" />
+                          <span class="mdl-switch__label"></span>
+                        </label>
+                        <div class="clr"></div>
+                      </div>
+                    </div>
+
+                    <div class="tab-container padding-top-0">
+                      <span class="title">Latest activity</span>
+                      <div class="card-header">
+                        <img src="img/sub-user.jpg" alt="">
+                        <div class="card-autor">
+                          <p>Jane is <i class="material-icons red">favorite</i> you.</p>
+                          <span class="light-text">A moment ago</span>
+                        </div>
+                      </div>
+
+                      <div class="card-header">
+                        <img src="img/user.jpg" alt="">
+                        <div class="card-autor">
+                          <p>Jonathan likes your photo.</p>
+                          <span class="light-text">2 minutes ago</span>
+                        </div>
+                      </div>
+
+                      <div class="card-header">
+                        <div class="contact-user bg-red"><span>5</span></div>
+                        <div class="card-autor">
+                          <p>New messages in inbox.</p>
+                          <span class="light-text">5 minutes ago</span>
+                        </div>
+                      </div>
+
+                      <div class="card-header">
+                        <img src="img/user.jpg" alt="">
+                        <div class="card-autor">
+                          <p>Mike added three photos.</p>
+                          <span class="light-text">5 hours ago</span>
+                        </div>
+                      </div>
+
+                      <div class="card-header">
+                        <div class="contact-user bg-purple"><span>7</span></div>
+                        <div class="card-autor">
+                          <p>New daily tasks.</p>
+                          <span class="light-text">Yesterday</span>
+                        </div>
+                      </div>
+
+                      <div class="card-header">
+                        <div class="contact-user bg-green"><span>2</span></div>
+                        <div class="card-autor">
+                          <p>New friends.</p>
+                          <span class="light-text">Yesterday</span>
+                        </div>
+                      </div>
+
+                      <span class="title margin-top-16 margin-bottom-16">Online friends <span class="dot bg-green"></span></span>
+                      <img class="little-user" src="img/sub-user.jpg" alt="">
+                      <img class="little-user" src="img/user.jpg" alt="">
+                      <img class="little-user" src="img/sub-user.jpg" alt="">
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div> 
+          </div> <!-- End of Right Sidebar -->
+
+          <div class="page-header bg-white">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a><span>·</span>Shop
+            </div>
+            <h1 class="page-title">Shopping</h1>
+          </div>
+
+          <div class="container padding-top-0">
+            <img class="margin-bottom-16" src="img/product.jpg" alt="">
+            <span class="light-text small-text">July 18, 2015 · Posted by Mark</span>
+            <h1>Backpack</h1>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite.</p>
+            <span class="price mdl-color-text--accent">$299.00</span>
+            <a href="product.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
+              More
+            </a>
+          </div>
+
+          <div class="container padding-top-64">
+            <img class="margin-bottom-16" src="img/product1.jpg" alt="">
+            <span class="light-text small-text">July 18, 2015 · Posted by Mark</span>
+            <h1>Cardigan</h1>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite.</p>
+            <p class="light-text margin-bottom-0"><span class="price not-avaliable">$129.00</span> - Out of stock</p>
+            <a href="product.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
+              Ask
+            </a>
+          </div>
+
+          <div class="container padding-top-64">
+            <img class="margin-bottom-16" src="img/product2.jpg" alt="">
+            <span class="light-text small-text">July 18, 2015 · Posted by Mark</span>
+            <h1>Wood Storage</h1>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite.</p>
+            <span class="price mdl-color-text--accent">$439.99</span>
+            <a href="product.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
+              More
+            </a>
+          </div>
+
+          <div class="container padding-top-64 padding-bottom-64">
+            <img class="margin-bottom-16" src="img/product4.jpg" alt="">
+            <span class="light-text small-text">July 18, 2015 · Posted by Mark</span>
+            <h1>Steel Chair</h1>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite.</p>
+            <p class="light-text margin-bottom-0"><span class="price not-avaliable">$138.50</span> - Out of stock</p>
+            <a href="product.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
+              Ask
+            </a>
+          </div>
+
+        </main>
+      </div>
+    </div>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+/* Layout */
+body {
+  padding:0;
+  margin:0;
+  font-family: "Montserrat", sans-serif;
+  color:#fff;
+  min-height: 100vh;
+  background-color: #37474f;
+  font-size: 14px;
+}
+iframe {
+  width:100%;
+  height:100%;
+}
+iframe::-webkit-scrollbar {  
+  display: none;
+} 
+img {
+  margin: 0 auto;
+	position: relative;
+}
+a {
+  cursor: pointer;
+  color: rgb(64,196,255);
+  text-decoration: none;
+}
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+p {
+  margin-top: 0;
+}
+
+.btn {
+  position: relative;
+  padding: 15px 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 50px;
+  background-color: rgb(64,196,255);
+}
+
+.contenitore {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.phone-container, .description {
+  width: 490px;
+}
+/* Elements */
+.description {
+  float: left;
+  margin: 108px 0 0;
+  display: block;
+}
+.phone-container {
+  float: left;
+  margin: 48px 0 0;
+}
+.qr {
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+}
+.clr {
+  clear: both;
+}
+
+
+
+.dark .phone-shape {border-color:#444;background-color:#111;box-shadow:-47px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.6);}
+.dark .camera, .dark .circle, .dark .speaker, .dark .circle-button {background-color:#222;}
+.dark .buttons, .dark .button.last {background-color:#333;box-shadow:-45px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.6);}
+/* Phone Color Styles - White */
+.phone-shape {width: 350px;height: 560px;border-radius: 40px;border: 2px solid #fff;margin:0 auto;padding: 60px 10px;background-color: #e7e7e7;position: relative;box-shadow:-47px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.1)}
+.phone-screen {height: 550px;width: 350px;background-color: #fff;box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;overflow: hidden;position: relative;}
+.top-details {position: absolute;left: 0;top: 17px;width: 100%;}
+.camera, .circle, .speaker {border-radius: 100px;display: block;background-color: #e1e1e1;}
+.camera {height: 7px;width: 7px;margin: auto;}
+.circle {height: 9px;width: 9px;position: absolute;left: 95px;top: 16px;}
+.speaker {height: 7px;width: 90px;margin: 10px auto 0;}
+.buttons, .button.last {width: 3px;background: #eee;position: absolute;}
+.buttons {box-shadow: -45px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.1);}
+.button.last {box-shadow:0 0 0 2px rgba(0,0,0,0.1);}
+.circle-button {height: 40px;width: 40px;background: #e1e1e1;margin: 17px auto;border-radius: 100px;}
+.button-one {height: 20px;left: -7px;top: 59px;border-radius: 4px 0 0 4px;}
+.button-two {height: 40px;width: 3px;left: -7px;top: 110px;border-radius: 4px 0 0 4px;}
+.button-three {height: 40px;width: 3px;left: -7px;top: 165px;border-radius: 4px 0 0 4px;}
+.button-four {height: 40px;width: 3px;right: -7px;top: 110px;border-radius: 0 4px 4px 0;}
+
+
+
+@media (max-width: 980px) {
+  .contenitore {
+    text-align: center;
+  }
+  .phone-container {
+    margin: 60px auto 0;
+  }
+  .phone-container, .description {
+    float: none !important;
+    width: 100% !important;
+  }
+  .description {
+    text-align: center;
+    margin: 40px 0 60px 0;
+  }
+}
