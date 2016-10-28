@@ -56,6 +56,13 @@ Primary use: App & Mobile Website
     display: table-cell !important;
     vertical-align: middle !important;
 }
+.balign-wrapper {
+    display: table !important;
+}
+.balign-wrapper .balign {
+    display: table-cell !important;
+    vertical-align: bottom !important;
+}
 .clr {
 	clear: both;
 }
