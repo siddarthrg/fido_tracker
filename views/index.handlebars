@@ -2,13 +2,27 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>Fido: Diet Tracker</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
+
+	<!-- HTML Template -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue-light_blue.min.css">  
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,32 +34,113 @@
 
 <body>
 	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<button id="colorBtn" class="btn btn-primary btn-lg">Colors!</button>
-		</div>
 
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		{{#each projects}}
-		<div class="project" id="{{id}}">
-			<div class="thumbnail">
-				<a href="#">
-					<img src="images/{{image}}" alt="Lorem Pixel image" class="img">
-					<p>{{name}}</p>
-				</a>
-				<div class="details"></div>
-			</div>
-		</div>
-		{{/each}}
+	<div class="animsition">
+      <!-- Header -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+        <header class="mdl-layout__header mdl-shadow--1dp bg-white">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+			
+            <span class="mdl-layout-title">Fido</span>
+            
+          </div>
+        </header>
+        <!-- Sidebar -->
+        <div class="mdl-layout__drawer">
 
+          <!-- Top -->
+          <div class="drawer-header">
+            <img src="img/user.jpg" alt="">
+          </div>
+          
+          <!-- Main Navigation -->
+          <nav class="mdl-navigation">
+            <div class="mdl-collapse first">
+                <a class="mdl-navigation__link mdl-collapse__button">
+                    
+                    <span>pet_enthusiast@email.com</span>
+                </a>
+                
+            </div>
+            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Home</span></a>
+            <a class="mdl-navigation__link animsition-link" href="profile.html"><i class="material-icons">person</i><span>Profile</span></a>
+            <a class="mdl-navigation__link animsition-link" href="profile.html"><i class="material-icons">pets</i><span>Pet Profile</span></a>
+			<a class="mdl-navigation__link animsition-link" href="vet_profile.html"><i class="material-icons">healing</i><span>Vet</span></a>
+            <a class="mdl-navigation__link animsition-link" href="shop.html"><i class="material-icons">shopping_cart</i><span>Shop</span></a>
+            <div class="drawer-separator"></div>
+            
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">settings</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Account</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="activity.html">Activity Feeds</a>
+                    <a class="mdl-navigation__link animsition-link" href="login.html">Login</a>
+                    <a class="mdl-navigation__link animsition-link" href="lockscreen.html">Lockscreen</a>
+                    <a class="mdl-navigation__link animsition-link" href="settings.html">Settings</a>
+                  </div>
+                </div>
+            </div>
+          </nav>
+        </div>
+		<!-- Page Content -->
+      				  <main class="mdl-layout__content">
+		<div class="swiper-container index">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="article-header fullscreen bg-blog">
+                  <div class="fullscreen-title balign-wrapper">
+                    <div class="balign">
+                      
+                      <p>– Feed Pet –</p>
+                      <a href="feed.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
+                        +
+                      </a>
+					  <p></p>
+					  <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slogan bg-shop gradient-container">
+                <div class="fullscreen-title valign-wrapper">
+                  <div class="valign">
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+
+
+        </main>
+      </div>
+    </div>
+</div>
+
+	<!-- Import -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/function.js"></script>
+	<!-- Bootstrap -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	<!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+    </script>
+
+
 </body>
 </html>
