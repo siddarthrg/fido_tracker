@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1,
+		"name": "French Fries",
+		"date": "2rd Nov 2016",
+		"cal": 500,
+		"mood": "sad",
+		"image": "/public/images/food/fries.jpg"
+
+	},
+	{
+		"id": 2,
+		"name": "Orange Juice",
+		"date": "2rd Nov 2016",
+		"cal": 100,
+		"mood": "happy",
+		"image": "public/images/food/oj.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Bannana",
+		"date": "3rd Nov 2016",
+		"cal": 80,
+		"mood": "apathetic",
+		"image": "/public/images/food/fries.jpg"
+
+	},
+	{
+		"id": 4,
+		"name": "Kale Salad",
+		"date": "3rd Nov 2016",
+		"cal": 250,
+		"mood": "happy",
+		"image": "/public/images/food/fries.jpg"
+
+	},{
+		"id": 5,
+		"name": "Sushi",
+		"date": "4th Nov 2016",
+		"cal": 800,
+		"mood": "happy",
+		"image": "/public/images/food/fries.jpg"
+
+	}
+]
