@@ -3,18 +3,24 @@
   "description": "Serving static content via html files",
   "version": "0.0.1",
   "author": "Edward Lim, Koji Kameda & Siddarth Govindan",
-
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/siddarthrg/fido_tracker"
+    "type": "git",
+    "url": "git+https://github.com/siddarthrg/fido_tracker.git"
   },
   "license": "MIT",
-
   "main": "app.js",
   "dependencies": {
     "express": "3.x"
   },
   "engines": {
-  	"node": "0.10.x"
+    "node": "0.10.x"
+  },
+  "bugs": {
+    "url": "https://github.com/siddarthrg/fido_tracker/issues"
+  },
+  "homepage": "https://github.com/siddarthrg/fido_tracker#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
