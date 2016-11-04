@@ -176,6 +176,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-product {
 	background: url('../img/product2.jpg') no-repeat center / cover;
 }
+.bg-select {
+	background: url('../img/select_group.jpg') no-repeat center;
+}
 .no-margin {
 	margin: 0;
 }
