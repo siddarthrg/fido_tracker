@@ -179,6 +179,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-select {
 	background: url('../img/select_group.jpg') no-repeat center;
 }
+.bg-happy {
+	background: url('../img/happy_lab.jpg') no-repeat center / cover;
+}
 .no-margin {
 	margin: 0;
 }
