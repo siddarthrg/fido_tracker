@@ -1183,6 +1183,13 @@ thead, tbody, .mdl-data-table__cell--non-numeric {
 	padding: 0 16px;
 	width: calc(100% - 32px);
 }
+.login-blank {
+	background: url(../img/10_blank.png) center / cover;
+	height: 100vh;
+	overflow: hidden;
+	padding: 0 16px;
+	width: calc(100% - 32px);
+}
 .login {
 	background: #ffffff;
 	border-radius: 2px;
@@ -1221,6 +1228,10 @@ thead, tbody, .mdl-data-table__cell--non-numeric {
 }
 .account-data .mdl-textfield {
 	width: 100%;
+}
+.login-title {
+	margin: 8px 16px 8px 32px;
+	color: #ffffff;
 }
 
 /* 8.3. Blog
