@@ -1,16 +1,16 @@
 {
-  "name": "cs147-lab-1",
+  "name": "fido-app",
   "description": "Serving static content via html files",
   "version": "0.0.1",
-  "author": "CS147 Staff <cs147@cs.stanford.edu>",
+  "author": "Edward Lim, Koji Kameda & Siddarth Govindan",
 
   "repository": {
   	"type": "git",
-  	"url": "https://github.com/StanfordHCI/cs147"
+  	"url": "https://github.com/siddarthrg/fido_tracker"
   },
   "license": "MIT",
 
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "express": "3.x"
   },

@@ -1,6 +1,6 @@
-Lab 2
+Fido 
 ====
 
-Lab 2 introduces you to static HTML, CSS, and Bootstrap.
+A COGS 120 Intro HCI class project created by Edward Lim, Koji Kameda & Siddarth Govindan
 
-Originally created by Scott Klemmer, Michael Bernstein, and a coalition of TAs. This version forked from https://github.com/IntroHCI/lab2 and modified by Philip Guo.
+Github repo: https://github.com/siddarthrg/fido_tracker
