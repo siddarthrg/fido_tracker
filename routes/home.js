@@ -1,19 +1,16 @@
 /*
  * GET home page.
  */
-
-exports.view = function(req, res){
-  res.render('home');
-};
-
 var data = require("../data/user.json");
 
 
-exports.dispUserData = function(req, res) {
-	// Your code goes here
+exports.view = function(req, res){
+  res.render('home', data);
+};
 
-  console.log("Successfully imported user data");
-}
+
+
+
 
 
  
