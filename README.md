@@ -1,6 +1,6 @@
-Fido 
+lab6
 ====
 
-A COGS 120 Intro HCI class project created by Edward Lim, Koji Kameda & Siddarth Govindan
+Lab 6 for Intro HCI: Connecting frontend and backend without page reloads
 
-Github repo: https://github.com/siddarthrg/fido_tracker
+Originally created by Scott Klemmer, Michael Bernstein, and a coalition of TAs. This version forked from https://github.com/IntroHCI/lab4 and modified by Philip Guo.

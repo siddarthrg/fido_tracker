@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Fido - Add Food</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue-light_blue.min.css">  
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="animsition">
+      <!-- Page Content -->
+      <main class="mdl-layout__content article">
+        <div class="back">
+          <a class="mdl-button mdl-js-button mdl-button--icon" href="/home">
+            <i class="material-icons">arrow_back</i>
+          </a>
+		  
+       <img src="images/select_group.jpg" alt="">
+
+			<p class="title margin-top-16">Select food group</p>
+			<p>
+              <label class="normal">What kind of food? <span>*</span></label>
+              <select class="normal">
+                <option value="–">--</option>
+                <option value="Asia">Grains</option>
+                <option value="Africa">Vegetables</option>
+                <option value="North America">Fruits</option>
+                <option value="South America">Dairy</option>
+                <option value="Antarctica">Protein</option>
+               
+              </select>
+            </p>
+       <p class="title margin-top-16">Enter Amount</p>
+            <p>
+              <label for="firstname" class="normal">Calories <span>*</span></label>
+              <input type="text" class="normal" name="firstname" id="firstname" placeholder="" value="">
+            </p>
+			<p class="title margin-top-16">Select Mood Experienced</p>
+			<p>
+              <label class="normal">How are you feeling? <span>*</span></label>
+              <select class="normal">
+                <option value="–">--</option>
+                <option value="Asia">Happy ^_^</option>
+                <option value="Africa">Satisfied :)</option>
+                <option value="North America">Apathetic :|</option>
+                <option value="South America">Sad :(</option>
+                <option value="Antarctica">Disgusted >_<</option>
+               
+              </select>
+            </p>
+        <p class="title margin-top-32">Additional information</p>
+            <textarea name="message" class="normal" id="message" placeholder="Some notes..." rows="2" cols="5"></textarea>
+			<a href="mood_happy.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border full margin-top-32">
+              SUBMIT
+            </a>
+      </main>
+    </div>
+
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>

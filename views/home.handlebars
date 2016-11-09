@@ -8,6 +8,11 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
+     <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/introHCI.css" rel="stylesheet">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -27,7 +32,7 @@
         <header class="mdl-layout__header mdl-shadow--1dp bg-white">
           <div class="mdl-layout__header-row">
             <!-- Title -->
-			
+	
             <span class="mdl-layout-title">Fido</span>
             
           </div>
@@ -40,7 +45,7 @@
             <img src="images/user.jpg" alt="">
           </div>
           
-          <!-- Main Navigation -->
+    <!-- Main Navigation -->
           <nav class="mdl-navigation">
             <div class="mdl-collapse first">
                 <a class="mdl-navigation__link mdl-collapse__button">
@@ -49,11 +54,11 @@
                 </a>
                 
             </div>
-            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Home</span></a>
-            <a class="mdl-navigation__link animsition-link" href="profile.html"><i class="material-icons">pets</i><span>Profile</span></a>
+            <a class="mdl-navigation__link animsition-link" href="/home"><i class="material-icons">home</i><span>Home</span></a>
+            <a class="mdl-navigation__link animsition-link" href="/profile"><i class="material-icons">pets</i><span>Profile</span></a>
            
-			<a class="mdl-navigation__link animsition-link" href="vet_happy.html"><i class="material-icons">healing</i><span>Vet</span></a>
-            <a class="mdl-navigation__link animsition-link" href="shop.html"><i class="material-icons">shopping_cart</i><span>Shop</span></a>
+      <a class="mdl-navigation__link animsition-link" href="vet_happy.html"><i class="material-icons">healing</i><span>Vet</span></a>
+            <a class="mdl-navigation__link animsition-link" href="/shop"><i class="material-icons">shopping_cart</i><span>Shop</span></a>
             <div class="drawer-separator"></div>
             
             <div class="mdl-collapse">
@@ -64,8 +69,8 @@
                 <div class="mdl-collapse__content-wrapper">
                   <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
 
-                    <a class="mdl-navigation__link animsition-link" href="logout_landing.html">Logout</a>
-                    <a class="mdl-navigation__link animsition-link" href="settings.html">Settings</a>
+                    <a class="mdl-navigation__link animsition-link" href="/logout">Logout</a>
+                    <a class="mdl-navigation__link animsition-link" href="/settings">Settings</a>
                   </div>
                 </div>
             </div>
@@ -74,10 +79,6 @@
         
         <!-- Page Content -->
         <main class="mdl-layout__content">
-
-    
-
-      
           <!--<div class="gradient-container index">
             <div class="article-header fullscreen bg-10">
               <div class="fullscreen-title valign-wrapper">
@@ -88,7 +89,6 @@
               </div>
             </div>
           </div>-->
-
           <div class="swiper-container index">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -97,7 +97,7 @@
                     <div class="balign">
                       
                       <p>– Feed Pet –</p>
-                      <a href="feed.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
+                      <a href="/feed" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
                         +
                       </a>
 					  <p></p>
@@ -109,16 +109,11 @@
               <div class="swiper-slide slogan bg-shop gradient-container">
                 <div class="fullscreen-title valign-wrapper">
                   <div class="valign">
-                    
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
-
-
-
         </main>
       </div>
     </div>
@@ -130,6 +125,11 @@
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/function.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>

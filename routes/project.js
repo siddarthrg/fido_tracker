@@ -8,8 +8,6 @@ exports.projectInfo = function(req, res) {
   projectID = parseInt(projectID);
   }
 
-  console.log(projects); 
-
   var project = projects[projectID-1]; // first project has index 0
   res.json(project); // send JSON back to browser
 }

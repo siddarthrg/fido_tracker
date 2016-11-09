@@ -1,0 +1,35 @@
+[
+	{
+		"name": "Edward Lim",
+		"email": "e4lim@ucsd.edu",
+		"pw": "thisisabadpassword",
+		"profpic": "/public/images/food/oj.jpg",
+		"pettype": "dog_lab",
+		"petname": "MrPeanutButter",
+		"mood": "happy",
+		"health": "100",
+		"coins": "100"
+	},
+	{
+		"name": "Koji Kameda",
+		"email": "kkameda@ucsd.edu",
+		"pw": "thisisaalsobadpassword",
+		"profpic": "/public/images/food/oj.jpg",
+		"pettype": "dog_lab",
+		"petname": "MrPeanutButterOG",
+		"mood": "happy",
+		"health": "100",
+		"coins": "100"
+	},
+	{
+		"name": "Siddarth Govindan",
+		"email": "srgovind@ucsd.edu",
+		"pw": "yetanotherbadpassword",
+		"profpic": "/public/images/food/fries.jpg",
+		"pettype": "dog_lab",
+		"petname": "NotMrPeanutButter",
+		"mood": "happy",
+		"health": "100",
+		"coins": "100"
+	}
+]
