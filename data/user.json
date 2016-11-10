@@ -6,7 +6,7 @@
 		"profpic": "/public/images/food/oj.jpg",
 		"pettype": "dog_lab",
 		"petname": "MrPeanutButter",
-		"mood": "happy",
+		"mood": 5,
 		"health": "100",
 		"coins": "100"
 	},
@@ -17,7 +17,7 @@
 		"profpic": "/public/images/food/oj.jpg",
 		"pettype": "dog_lab",
 		"petname": "MrPeanutButterOG",
-		"mood": "happy",
+		"mood": 5,
 		"health": "100",
 		"coins": "100"
 	},
@@ -28,7 +28,7 @@
 		"profpic": "/public/images/food/fries.jpg",
 		"pettype": "dog_lab",
 		"petname": "NotMrPeanutButter",
-		"mood": "happy",
+		"mood": 5,
 		"health": "100",
 		"coins": "100"
 	}
