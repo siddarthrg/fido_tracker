@@ -12,6 +12,7 @@ var home = require('./routes/home');
 var feed = require('./routes/feed');
 var profile = require('./routes/profile');
 var shop = require('./routes/shop');
+var history = require('./routes/history');
 
 var login = require('./routes/login');
 var logout_landing = require('./routes/logout_landing');
@@ -52,6 +53,7 @@ app.get('/home', home.view);
 app.get('/feed', feed.view);
 app.get('/profile',profile.view);
 app.get('/shop',shop.view);
+app.get('/history',history.view);
 
 app.get('/login',login.view);
 app.get('/logout',logout_landing.view);
