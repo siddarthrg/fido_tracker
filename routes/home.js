@@ -2,7 +2,7 @@
  * GET home page.
  */
 
- // Import json data files
+// Import json
 var userData = require("../data/user.json");
 var logData = require("../data/log.json");
 
@@ -21,6 +21,7 @@ var year = today.getFullYear();
 var avgMood = 0; 
 var count = 0;
 
+// ERROR: Not calculating last entry in json
 for (var i=0; i<logData.length; i++){
 	if (logData[i].mm == month){
 		if(logData[i].dd == day){

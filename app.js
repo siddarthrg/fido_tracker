@@ -25,6 +25,11 @@ var settings = require('./routes/settings');
 // Example route
 // var user = require('./routes/user');
 
+// // Define json data as global variables
+// var userData = require("./data/user.json");
+// var logData = require("./data/log.json");
+
+
 var app = express();
 
 // all environments

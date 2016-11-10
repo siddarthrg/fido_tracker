@@ -2,7 +2,7 @@
  * GET feed page.
  */
 
-// Import json data files
+// Import json
 var logData = require("../data/log.json");
 
 // Render home page and json data
