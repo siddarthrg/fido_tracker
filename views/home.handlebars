@@ -50,7 +50,7 @@
             <div class="mdl-collapse first">
                 <a class="mdl-navigation__link mdl-collapse__button">
                     
-                    <span>{{#each userData}} {{email}} {{/each}}</span>
+                    <span>{{userData.2.email}}</span>
                 </a>
                 
             </div>
@@ -78,12 +78,8 @@
           </nav>
         </div>
         
-       <!-- Page Content -->
+        <!-- Page Content -->
         <main class="mdl-layout__content">
-
-    
-
-      
           <!--<div class="gradient-container index">
             <div class="article-header fullscreen bg-10">
               <div class="fullscreen-title valign-wrapper">
@@ -94,27 +90,16 @@
               </div>
             </div>
           </div>-->
-
           <div class="swiper-container index">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="article-header fullscreen bg-blog">
-                
-                
                   <div class="fullscreen-title balign-wrapper">
-                    <div class="balign bg-mrpb">
+                    <div class="balign">
                       
-                      
-                      	<div class="balign center_it">
-							
-							<h6>Mr. Peanutbutter</h6>
-                      	</div>	
-                   
-                      
-             		  <h6><font color="#FFFFFF">MOOD: Happy  |  COINS: 200</font></h6>
-                      <h5><font color="#FFFFFF">– What have you eaten today? –</font></h5>
-                      <a href="feed.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary margin-bottom-16">
-                        FEED PET
+                      <p>– Feed Pet –</p>
+                      <a href="/feed" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
+                        +
                       </a>
 					  <p></p>
 					  <p></p>
@@ -125,16 +110,11 @@
               <div class="swiper-slide slogan bg-shop gradient-container">
                 <div class="fullscreen-title valign-wrapper">
                   <div class="valign">
-                    
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
-
-
-
         </main>
       </div>
     </div>

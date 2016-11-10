@@ -63,13 +63,6 @@ Primary use: App & Mobile Website
     display: table-cell !important;
     vertical-align: bottom !important;
 }
-.center_it {
-	position: absolute;
-    top: 75%;
-    left: 50%;
-    margin-right: -50%;
-    background: url('../img/banner.png') no-repeat center;
-}
 .clr {
 	clear: both;
 }
@@ -219,11 +212,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-grey-dairy {
 	background: url('../images/grey-dairy.png') no-repeat center / cover;
 }
-.bg-mrpb {
-	background: url('../images/mrpb.png') no-repeat center;
-}
-.bg-banner {
-	background: url('../images/banner.png') no-repeat center;
 .no-margin {
 	margin: 0;
 }
