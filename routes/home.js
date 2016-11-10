@@ -44,5 +44,3 @@ avgMood = Math.round(avgMood); // Rounding off to closest integer
 userData[2].mood = avgMood; // Saving to user.json
 console.log('Averge mood saved to user.json');
 console.log('Averge mood = ' + avgMood)
-
-
