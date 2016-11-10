@@ -6,12 +6,10 @@
 var userData = require("../data/user.json");
 var logData = require("../data/log.json");
 
-// Render home page and import json data
+// Render home page and json data
 exports.view = function(req, res){
   res.render('home', userData);
 };
-
-var avgMood = 0; // Set default mood of pet
 
 // Get today's date
 var today = new Date();
@@ -20,6 +18,7 @@ var month = today.getMonth()+1; //January is 0! That's why we're adding 1 to mak
 var year = today.getFullYear();
 
 // Calculate average mood of pet based on today's data
+var avgMood = 0; 
 var count = 0;
 
 for (var i=0; i<logData.length; i++){
