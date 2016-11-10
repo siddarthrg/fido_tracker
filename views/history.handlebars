@@ -2,16 +2,11 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Fido: Diet Tracker</title>
+    <title>History</title>
     <meta name="description" content="">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-
-     <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/introHCI.css" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500" type="text/css">
@@ -20,24 +15,23 @@
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue-light_blue.min.css">  
     <link rel="stylesheet" href="css/swipebox.min.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div class="animsition">
-     
-      <!-- Header -->
+      
+<!-- Header -->
       <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
         <header class="mdl-layout__header mdl-shadow--1dp bg-white">
           <div class="mdl-layout__header-row">
             <!-- Title -->
-	
-            <span class="mdl-layout-title">Fido</span>
+			
+            <span class="mdl-layout-title">History</span>
             
           </div>
         </header>
-<!-- Sidebar -->
+        <!-- Sidebar -->
         <div class="mdl-layout__drawer">
 
           <!-- Top -->
@@ -58,7 +52,7 @@
             <a class="mdl-navigation__link animsition-link" href="/profile"><i class="material-icons">pets</i><span>Profile</span></a>
            
 			<a class="mdl-navigation__link animsition-link" href="vet_happy.html"><i class="material-icons">healing</i><span>Vet</span></a>
-			<a class="mdl-navigation__link animsition-link" href="/history"><i class="material-icons">history</i><span>History</span></a>
+			<a class="mdl-navigation__link animsition-link" href="/activity"><i class="material-icons">history</i><span>History</span></a>
             <a class="mdl-navigation__link animsition-link" href="/shop"><i class="material-icons">shopping_cart</i><span>Shop</span></a>
             <div class="drawer-separator"></div>
             
@@ -80,65 +74,99 @@
         
         <!-- Page Content -->
         <main class="mdl-layout__content">
-          <!--<div class="gradient-container index">
-            <div class="article-header fullscreen bg-10">
-              <div class="fullscreen-title valign-wrapper">
-                <div class="valign">
-                  <h1 class="white">Satellite.</h1>
-                  <p class="white">– Mobile template –</p>
-                </div>
-              </div>
-            </div>
-          </div>-->
-          <div class="swiper-container index">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="article-header fullscreen bg-blog">
-                  <div class="fullscreen-title balign-wrapper">
-                    <div class="balign">
-                      
-                      <p>– Feed Pet –</p>
-                      <a href="/feed" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
-                        +
-                      </a>
-					  <p></p>
-					  <p></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide slogan bg-shop gradient-container">
-                <div class="fullscreen-title valign-wrapper">
-                  <div class="valign">
-                  </div>
-                </div>
-              </div>
+
+          
+         <div class="tab-container bg-white">
+
+          <span class="title">Today</span>
+          <div class="card-header">
+            <img src="img/sub-user.jpg" alt="">
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>sourdough toast</b> and felt <b>happy</b>!</p>
+              <span class="light-text">100 Calories of <b>GRAINS</b></span>
             </div>
           </div>
+
+          <div class="card-header">
+            <img src="img/user.jpg" alt="">
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>strawberry yogurt</b> and felt <b>happy</b>!</p>
+              <span class="light-text">70 Calories of <b>DAIRY</b></span>
+            </div>
+          </div>
+
+          <div class="card-header">
+            <div class="contact-user bg-red"><span>5</span></div>
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>fried chicken</b> and felt <b>disgusted</b>!</p>
+              <span class="light-text">150 Calories of PROTEIN</span>
+            </div>
+          </div>
+
+
+          <span class="title padding-top-32">Yesterday</span>
+
+          <div class="card-header">
+            <div class="contact-user bg-purple"><span>7</span></div>
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>protein bar</b> and felt <b>apathetic</b>.</p>
+              <span class="light-text">180 Calories of PROTEIN</span>
+            </div>
+          </div>
+
+          <div class="card-header">
+            <img src="img/user.jpg" alt="">
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>bananas</b> and felt <b>Happy</b>!</p>
+              <span class="light-text">80 Calories of FRUITS</span>
+            </div>
+          </div>
+
+          
+
+
+          <span class="title padding-top-32">November 7, 2016</span>
+
+          <div class="card-header">
+            <div class="contact-user bg-purple"><span>7</span></div>
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>protein bar</b> and felt <b>apathetic</b>.</p>
+              <span class="light-text">180 Calories of PROTEIN</span>
+            </div>
+          </div>
+		  <div class="card-header">
+            <div class="contact-user bg-purple"><span>7</span></div>
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>protein bar</b> and felt <b>apathetic</b>.</p>
+              <span class="light-text">180 Calories of PROTEIN</span>
+            </div>
+          </div>
+		  <div class="card-header">
+            <div class="contact-user bg-purple"><span>7</span></div>
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>protein bar</b> and felt <b>apathetic</b>.</p>
+              <span class="light-text">180 Calories of PROTEIN</span>
+            </div>
+			
+          </div>
+		  <div class="card-header">
+            <div class="contact-user bg-purple"><span>7</span></div>
+            <div class="card-autor">
+              <p>Mr. Peanutbutter ate <b>protein bar</b> and felt <b>apathetic</b>.</p>
+              <span class="light-text">180 Calories of PROTEIN</span>
+            </div>
+          </div>
+		  </div>
         </main>
       </div>
     </div>
+
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
     <script src="js/sweetalert.min.js"></script> 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
-    <script src="js/swiper.min.js"></script>
     <script src="js/function.js"></script>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        direction: 'vertical'
-    });
-    </script>
   </body>
 </html>
