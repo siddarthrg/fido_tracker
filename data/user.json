@@ -1,4 +1,4 @@
-{ 	"userData" :[
+[
 	{
 		"name": "Edward Lim",
 		"email": "e4lim@ucsd.edu",
@@ -32,4 +32,4 @@
 		"health": "100",
 		"coins": "100"
 	}
-]}
+]	

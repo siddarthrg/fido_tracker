@@ -1,4 +1,4 @@
-{	"logData":[
+[
 	{
 		"id": 1,
 		"name": "French Fries",
@@ -52,4 +52,4 @@
 		"image": "/public/images/food/fries.jpg"
 
 	}
-]}
+]
