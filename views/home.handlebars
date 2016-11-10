@@ -102,7 +102,7 @@
                 
                 
                   <div class="fullscreen-title balign-wrapper">
-                    <div class="balign bg-mrpb">
+                    <div class="balign bg-mrpb" id="moodImg">
                       
                       
                       	<div class="balign center_it">
@@ -160,22 +160,22 @@
     });
     </script>
 
-    <!-- Script to change image according to mood
+    
     <script>
       var avgMood = {{userData.mood}};
       if(avgMood == 1)
-        document.getElementById("moodImage").src = "/public/images/mood.jpg";
+        document.getElementById("moodImage").style = 'background: url("/public/images/mrpb.png") no-repeat center';
       else if(avgMood == 2)
-        document.getElementById("moodImage").src = "/public/images/mood.jpg";
+        document.getElementById("moodImage").style = 'background: url("/public/images/mrpb.png") no-repeat center';
       else if(avgMood == 3)
-        document.getElementById("moodImage").src = "/public/images/mood.jpg";
+        document.getElementById("moodImage").style = 'background: url("/public/images/mrpb.png") no-repeat center';
       else if(avgMood == 4)
-        document.getElementById("moodImage").src = "/public/images/mood.jpg";
+        document.getElementById("moodImage").style = 'background: url("/public/images/mrpb.png") no-repeat center';
       else 
-        document.getElementById("moodImage").src = "/public/images/mood.jpg";
+        document.getElementById("moodImage").style = 'background: url("/public/images/mrpb.png") no-repeat center';
     </script>
 
-    -->
+    
 
   </body>
 </html>
