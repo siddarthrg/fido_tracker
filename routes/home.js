@@ -41,6 +41,5 @@ if(count && count == 0){
 // Calculate final value & console log average mood 
 console.log('Average mood for today calculated!');
 avgMood = Math.round(avgMood); // Rounding off to closest integer  
-userData[2].mood = avgMood; // Saving to user.json
-console.log('Averge mood saved to user.json');
+userData[0].mood = avgMood; 
 console.log('Averge mood = ' + avgMood)
