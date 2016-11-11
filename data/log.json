@@ -8,7 +8,12 @@
 		"cal": 500,
 		"mood": 2,
 		"info":"Tasty!",
-		"image": "/public/images/food/fries.jpg"
+		"image": "/public/images/food/fries.jpg",
+		"ateGrains": 1,
+		"ateFruit": 0,
+		"ateVeggies": 0,
+		"ateProtein": 0,
+		"ateDairy": 0
 
 	},
 	{
@@ -21,6 +26,11 @@
 		"mood": 5,
 		"info":"Tasty!",
 		"image": "public/images/food/oj.jpg"
+		"ateGrains": 0,
+		"ateFruit": 1,
+		"ateVeggies": 0,
+		"ateProtein": 0,
+		"ateDairy": 0
 	},
 	{
 		"id": 3,
@@ -32,6 +42,11 @@
 		"mood": 3,
 		"info":"Tasty!",
 		"image": "/public/images/food/fries.jpg"
+		"ateGrains": 0,
+		"ateFruit": 1,
+		"ateVeggies": 0,
+		"ateProtein": 0,
+		"ateDairy": 0
 
 	},
 	{
@@ -44,6 +59,11 @@
 		"mood": 5,
 		"info":"Tasty!",
 		"image": "/public/images/food/fries.jpg"
+		"ateGrains": 0,
+		"ateFruit": 0,
+		"ateVeggies": 1,
+		"ateProtein": 0,
+		"ateDairy": 0
 
 	}
 ]

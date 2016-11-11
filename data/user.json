@@ -8,6 +8,11 @@
 		"petname": "MrPeanutButterOG",
 		"mood": 5,
 		"health": "100",
-		"coins": "100"
+		"coins": "100",
+		"ateGrains": 0,
+		"ateFruit": 0,
+		"ateVeggies": 0,
+		"ateProtein": 0,
+		"ateDairy": 0
 	}
 ]	

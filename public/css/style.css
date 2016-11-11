@@ -204,7 +204,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-dairy {
 	background: url('../images/dairy.png') no-repeat center / cover;
 }
-.bg-grey-fruit {
+.bg-fruit {
 	background: url('../images/grey-fruit.png') no-repeat center / cover;
 }
 .bg-grey-veggies {
@@ -222,9 +222,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-mrpb {
 	background: url('../images/mrpb.png') no-repeat center;
 }
-#mood {
-	background: url('../images/mrpb.png') no-repeat center;
-}
+
 .bg-banner {
 	background: url('../images/banner.png') no-repeat center;
 }
