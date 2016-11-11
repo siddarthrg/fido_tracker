@@ -77,5 +77,21 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/function.js"></script>
+	
+	<!-- Change Image based on Mood -->
+    <script>
+      var avgMood = {{0.mood}};
+      if(avgMood == 1)
+        document.getElementById("moodImage").src = "images/vet_happy.png";
+      else if(avgMood == 2)
+        document.getElementById("moodImage").src = "images/vet_satisfied.jpg";
+      else if(avgMood == 3)
+        document.getElementById("moodImage").src = "images/vet_apathetic.jpg";
+      else if(avgMood == 4)
+        document.getElementById("moodImage").src = "images/vet_sad.jpg";
+      else 
+        document.getElementById("moodImage").src = "images/vet_disgusted.jpg";
+    </script>
+	
   </body>
 </html>
