@@ -8,7 +8,7 @@ var logData = require("../data/log.json");
 
 // Render home page and json data
 exports.view = function(req, res){
-  res.render('home', userData);
+  res.render('home', { userData: userData });
 };
 
 // Get today's date
