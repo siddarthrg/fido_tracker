@@ -70,7 +70,6 @@
         </div>
       </main>
     </div>
-
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>
     <script src="js/sweetalert.min.js"></script> 
@@ -117,15 +116,15 @@
   <script type="text/javascript">
     var avgMood = {{userData.0.mood}};
       if(avgMood == 5)
-        document.getElementById("vetComment").text = "Great job! Mr.Peanutbutter is in excellent health!";
+        document.getElementById("vetComment").src = "Great job! Mr.Peanutbutter is in excellent health!";
       else if(avgMood == 4)
-        document.getElementById("vetComment").text = "Mr. Peanutbutter is quite happy!";
+        document.getElementById("vetComment").src = "Mr. Peanutbutter is quite happy!";
       else if(avgMood == 3)
-        document.getElementById("vetComment").text = "Mr.Peanutbutter seems well.";
+        document.getElementById("vetComment").src = "Mr.Peanutbutter seems well.";
       else if(avgMood == 2)
-        document.getElementById("vetComment").text = "Mr.Peanutbutter is feeling sad!";
+        document.getElementById("vetComment").src = "Mr.Peanutbutter is feeling sad!";
       else 
-        document.getElementById("vetComment").text = "Oh no! Mr.Peanutbutter is feeling disgusted! What have you been eating recently?";
+        document.getElementById("vetComment").src = "Oh no! Mr.Peanutbutter is feeling disgusted! What have you been eating recently?";
   </script>
 
 
