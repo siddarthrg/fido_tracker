@@ -81,7 +81,13 @@
       </main>
     </div>
 
-
+  <!-- Script to get current date -->
+  <script type="text/javascript">
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.getMonth()+1; //January is 0! That's why we're adding 1 to make Jan == 1
+    var year = today.getFullYear();
+  </script>
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>

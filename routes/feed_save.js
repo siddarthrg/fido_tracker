@@ -16,14 +16,20 @@ exports.view = function(req, res){
 		"cal": req.body.cal,
 		"mood": req.body.mood,
 		"info": req.body.info,
-		"image": "public/images/food/oj.jpg"
+		"image": "public/images/food/oj.jpg",
+
+		"ateGrains": req.body.ateGrains,
+ 		"ateFruit": req.body.ateFruit,
+ 		"ateVeggies": req.body.ateVeggies,
+ 		"ateProtein": req.body.ateProtein,
+ 		"ateDairy": req.body.ateDairy
 	}
 
 	logData.push(newLog);
 	var newData = JSON.stringify(logData);
 	
 	var fs = require('fs');
-	fs.writeFile("data/log.json",newData, function(err) {
+	fs.writeFile("data/test.json",newData, function(err) {
 	    if(err) {
 	        return console.log(err);
 	    }
