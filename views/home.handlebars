@@ -57,7 +57,7 @@
             <a class="mdl-navigation__link animsition-link" href="/home"><i class="material-icons">home</i><span>Home</span></a>
             <a class="mdl-navigation__link animsition-link" href="/profile"><i class="material-icons">pets</i><span>Profile</span></a>
            
-			<a class="mdl-navigation__link animsition-link" href="vet_happy.html"><i class="material-icons">healing</i><span>Vet</span></a>
+			<a class="mdl-navigation__link animsition-link" href="/vet"><i class="material-icons">healing</i><span>Vet</span></a>
 			<a class="mdl-navigation__link animsition-link" href="/history"><i class="material-icons">history</i><span>History</span></a>
             <a class="mdl-navigation__link animsition-link" href="/shop"><i class="material-icons">shopping_cart</i><span>Shop</span></a>
             <div class="drawer-separator"></div>
@@ -132,8 +132,6 @@
             
           </div>
 
-
-
         </main>
       </div>
     </div>
@@ -162,7 +160,7 @@
 
     <!-- Change Image based on Mood -->
     <script>
-      var avgMood = {{0.mood}};
+      var avgMood = {{userData.0.mood}};
       if(avgMood == 1)
         document.getElementById("moodImage").style = 'background: url("images/mrpb.png") no-repeat center';
       else if(avgMood == 2)
@@ -175,9 +173,6 @@
         document.getElementById("moodImage").style = 'background: url("images/protein.png") no-repeat center';
     </script>
 
-
-
-    
 
   </body>
 </html>

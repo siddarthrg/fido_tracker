@@ -596,10 +596,26 @@ input.normal {
     border: 1px solid #e7e7e7;
     border-radius: 0;
     box-shadow: none;
+    display: inline;
 }
+
+input.normalpad {
+	display: block;
+    width: calc(100% - 22px);
+    font-family: inherit;
+    line-height: 1.5;
+    outline: 0;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 0;
+    box-shadow: none;
+    display:inline; 
+	width: 25%;
+}
+
 select.normal {
 	display: block;
-	width: 100%;
+	width: calc(100% - 22px);
 	height: 38px;
 	line-height: 1.5;
 	padding: 10px;
