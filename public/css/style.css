@@ -588,7 +588,7 @@ label.normal {
 }
 input.normal {
 	display: block;
-    width: calc(100% - 22px);
+    width: calc(90%);
     font-family: inherit;
     line-height: 1.5;
     outline: 0;
@@ -599,9 +599,19 @@ input.normal {
     display: inline;
 }
 
+img.normal {
+	display: block;
+    width: calc(90%);
+    font-family: inherit;
+    line-height: 1.5;
+    padding: 10px;
+    box-shadow: none;
+    display: inline;
+}
+
 input.normalpad {
 	display: block;
-    width: calc(100% - 22px);
+    width: calc(90%);
     font-family: inherit;
     line-height: 1.5;
     outline: 0;
@@ -615,7 +625,7 @@ input.normalpad {
 
 select.normal {
 	display: block;
-	width: calc(100% - 22px);
+	width: calc(90%);
 	height: 38px;
 	line-height: 1.5;
 	padding: 10px;
@@ -626,7 +636,7 @@ select.normal {
 }
 textarea.normal {
 	display: block;
-	width: calc(100% - 22px);
+	width: calc(90%);
 	height: 72px;
 	line-height: 1.5;
 	padding: 10px;
