@@ -95,21 +95,20 @@
   
   <!-- Change icons based on food groups eaten -->
   <script>
-    var ate_Grains = {{userData.0.ateGrains}};
-    var ate_Dairy = {{userData.0.ateDairy}};
-    var ate_Veggies = {{userData.0.ateVeggies}};
-    var ate_Fruit = {{userData.0.ateFruit}};
-    var ate_Protein = {{userData.0.ateProtein}};
-    
-    if(ate_Grains == 1)
+    var ateGrains = {{userData.0.ateGrains}};
+    var ateDairy = {{userData.0.ateDairy}};
+    var ateVeggies = {{userData.0.ateVeggies}};
+    var ateFruit = {{userData.0.ateFruit}};
+    var ateProtein = {{userData.0.ateProtein}};
+    if(ateGrains == 1)
     document.getElementById("icon_grains").style.background = "url('images/grains.png') no-repeat center / cover";
-    if(ate_Dairy == 1)
+    if(ateDairy == 1)
       document.getElementById("icon_dairy").style.background = "url('images/dairy.png') no-repeat center / cover";
-    if(ate_Protein == 1)
+    if(ateProtein == 1)
       document.getElementById("icon_protein").style.background = "url('images/protein.png') no-repeat center / cover";
-    if(ate_Veggies == 1)
+    if(ateVeggies == 1)
       document.getElementById("icon_veggies").style.background = "url('images/veggies.png') no-repeat center / cover";
-    if(ate_Fruit == 1)
+    if(ateFruit == 1)
       document.getElementById("icon_fruit").style.background = "url('images/fruit.png') no-repeat center / cover";
   </script>
   

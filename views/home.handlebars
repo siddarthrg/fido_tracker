@@ -159,18 +159,19 @@
     </script>
 
     <!-- Change Image based on Mood -->
+    <    <!-- Change Image based on Mood -->
     <script>
-      var avgMood = {{userData.0.mood}};
+    var avgMood = {{userData.0.mood}};
       if(avgMood == 1)
-        document.getElementById("moodImage").style = 'background: url("images/mrpb.png") no-repeat center';
+      document.getElementById("moodImage").style = 'background: url("images/dog_happy.png") no-repeat center';
       else if(avgMood == 2)
-        document.getElementById("moodImage").style = 'background: url("images/veggies.png") no-repeat center';
+      document.getElementById("moodImage").style = 'background: url("images/dog_satisfied.png") no-repeat center';
       else if(avgMood == 3)
-        document.getElementById("moodImage").style = 'background: url("images/fruit.png") no-repeat center';
+      document.getElementById("moodImage").style = 'background: url("images/dog_apathetic.png") no-repeat center';
       else if(avgMood == 4)
-        document.getElementById("moodImage").style = 'background: url("images/grains.png") no-repeat center';
+      document.getElementById("moodImage").style = 'background: url("images/dog_sad.png") no-repeat center';
       else 
-        document.getElementById("moodImage").style = 'background: url("images/protein.png") no-repeat center';
+      document.getElementById("moodImage").style = 'background: url("images/dog_disgusted.png") no-repeat center';
     </script>
 
 
