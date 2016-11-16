@@ -34,7 +34,7 @@ exports.view = function(req, res){
 	        return console.log(err);
 	    }
 	    console.log("The new log was saved!");
-	    res.redirect('/home');
+	    res.redirect('/vet');
 	});
 
 };

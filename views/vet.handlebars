@@ -44,18 +44,18 @@
           </div>
 
           <div class="account-data"> <!-- text fields -->
-			<img src="img/happy_doc.png" alt="">
+      <img src="img/happy_doc.png" alt="">
             
-			<div class="padding-top-32"></div>
-			
+      <div class="padding-top-32"></div>
+      
             <div class="card-autor">
               <p>Remaining food groups:</p>             
               <div class="photo-add">
-                <div class="square-user bg-grains"></div>
-                <div class="square-user bg-veggies"></div>
-                <div class="square-user bg-fruit"></div>
-				         <div class="square-user bg-dairy"></div>
-			         	<div class="square-user bg-protein"></div>
+                <div class="square-user bg-grey-grains" id="icon_grains"></div>
+                <div class="square-user bg-grey-veggies" id="icon_veggies"></div>
+                <div class="square-user bg-grey-fruit" id="icon_fruit"></div>
+        <div class="square-user bg-grey-dairy" id="icon_dairy"></div>
+        <div class="square-user bg-grey-protein" id="icon_protein"></div>
                 <div class="clr"></div>
               </div>
             </div>
@@ -77,5 +77,41 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/function.js"></script>
+  
+  <!-- Change Image based on Mood -->
+    <script>
+      var avgMood = {{userData.0.mood}};
+      if(avgMood == 1)
+        document.getElementById("moodImage").src = "images/vet_happy.png";
+      else if(avgMood == 2)
+        document.getElementById("moodImage").src = "images/vet_satisfied.jpg";
+      else if(avgMood == 3)
+        document.getElementById("moodImage").src = "images/vet_apathetic.jpg";
+      else if(avgMood == 4)
+        document.getElementById("moodImage").src = "images/vet_sad.jpg";
+      else 
+        document.getElementById("moodImage").src = "images/vet_disgusted.jpg";
+    </script>
+  
+  <!-- Change icons based on food groups eaten -->
+  <script>
+    var ate_Grains = {{userData.0.ateGrains}};
+    var ate_Dairy = {{userData.0.ateDairy}};
+    var ate_Veggies = {{userData.0.ateVeggies}};
+    var ate_Fruit = {{userData.0.ateFruit}};
+    var ate_Protein = {{userData.0.ateProtein}};
+    
+    if(ate_Grains == 1)
+    document.getElementById("icon_grains").style.background = "url('images/grains.png') no-repeat center / cover";
+    if(ate_Dairy == 1)
+      document.getElementById("icon_dairy").style.background = "url('images/dairy.png') no-repeat center / cover";
+    if(ate_Protein == 1)
+      document.getElementById("icon_protein").style.background = "url('images/protein.png') no-repeat center / cover";
+    if(ate_Veggies == 1)
+      document.getElementById("icon_veggies").style.background = "url('images/veggies.png') no-repeat center / cover";
+    if(ate_Fruit == 1)
+      document.getElementById("icon_fruit").style.background = "url('images/fruit.png') no-repeat center / cover";
+  </script>
+  
   </body>
 </html>
