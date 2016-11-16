@@ -47,7 +47,7 @@ if(count && count == 0){
 }
 
 // Check whether a food group has been eaten
-for (var j=0; j<logData.length; j++){
+for (var i=0; i<logData.length; i++){
 	if (logData[i].mm == month){
 		if(logData[i].dd == day){
 			if(logData[i].ateGrains == 1) {

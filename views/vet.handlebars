@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Fido - Vet: Happy</title>
+    <title>Vet</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="HandheldFriendly" content="True">
@@ -39,29 +39,29 @@
             <div class="login-title">
               <h1><FONT Color="#ffffff">Veterinarian</FONT></h1>
             </div>
-              <span>Great job! Mr.Peanutbutter is in excellent health!</span>
+              <span id="vetComment">Vet's comments go here.</span>
             </div>
           </div>
 
           <div class="account-data"> <!-- text fields -->
-      <img src="img/happy_doc.png" alt="">
+      <img id="vetImage" src="images/happy_doc.png" alt="">
             
       <div class="padding-top-32"></div>
       
             <div class="card-autor">
               <p>Remaining food groups:</p>             
-              <div class="photo-add">
-                <div class="square-user bg-grey-grains" id="icon_grains"></div>
-                <div class="square-user bg-grey-veggies" id="icon_veggies"></div>
-                <div class="square-user bg-grey-fruit" id="icon_fruit"></div>
-        <div class="square-user bg-grey-dairy" id="icon_dairy"></div>
-        <div class="square-user bg-grey-protein" id="icon_protein"></div>
+              <div class="photo-add"g>
+                <div class="square-user" id="icon_grains" src="images/grey_grains"></div>
+                <div class="square-user" id="icon_veggies" src="images/grey_veggies"></div>
+                <div class="square-user" id="icon_fruit" src="images/grey_fruit"></div>
+                <div class="square-user" id="icon_dairy" src="images/grey_dairy"></div>
+                <div class="square-user" id="icon_protein" src="images/grey_protein"></div>
                 <div class="clr"></div>
               </div>
             </div>
           
             <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary margin-top-32 right" href="/home">                
-              CONTINUE
+              LEMME SEE MY DOGGIE
             </a>
             <div class="clr"></div>
             
@@ -81,16 +81,16 @@
   <!-- Change Image based on Mood -->
     <script>
       var avgMood = {{userData.0.mood}};
-      if(avgMood == 1)
-        document.getElementById("moodImage").src = "images/vet_happy.png";
-      else if(avgMood == 2)
-        document.getElementById("moodImage").src = "images/vet_satisfied.jpg";
-      else if(avgMood == 3)
-        document.getElementById("moodImage").src = "images/vet_apathetic.jpg";
+      if(avgMood == 5)
+        document.getElementById("vetImage").src = "images/vet_happy.png";
       else if(avgMood == 4)
-        document.getElementById("moodImage").src = "images/vet_sad.jpg";
+        document.getElementById("vetImage").src = "images/vet_satisfied.jpg";
+      else if(avgMood == 3)
+        document.getElementById("vetImage").src = "images/vet_apathetic.jpg";
+      else if(avgMood == 2)
+        document.getElementById("vetImage").src = "images/vet_sad.jpg";
       else 
-        document.getElementById("moodImage").src = "images/vet_disgusted.jpg";
+        document.getElementById("vetImage").src = "images/vet_disgusted.jpg";
     </script>
   
   <!-- Change icons based on food groups eaten -->
@@ -111,6 +111,23 @@
     if(ateFruit == 1)
       document.getElementById("icon_fruit").style.background = "url('images/fruit.png') no-repeat center / cover";
   </script>
-  
+
+
+  <!-- Change Vet Comments based on Mood -->
+  <script type="text/javascript">
+    var avgMood = {{userData.0.mood}};
+      if(avgMood == 5)
+        document.getElementById("vetComment").text = "Great job! Mr.Peanutbutter is in excellent health!";
+      else if(avgMood == 4)
+        document.getElementById("vetComment").text = "Mr. Peanutbutter is quite happy!";
+      else if(avgMood == 3)
+        document.getElementById("vetComment").text = "Mr.Peanutbutter seems well.";
+      else if(avgMood == 2)
+        document.getElementById("vetComment").text = "Mr.Peanutbutter is feeling sad!";
+      else 
+        document.getElementById("vetComment").text = "Oh no! Mr.Peanutbutter is feeling disgusted! What have you been eating recently?";
+  </script>
+
+
   </body>
 </html>
