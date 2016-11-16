@@ -149,6 +149,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .square-user {
 	width: 48px;
 	height: 48px;
+	background: no-repeat center / cover
 }
 .bg-2 {
 	background: url('../images/2.jpg') no-repeat center / cover;
@@ -204,7 +205,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-dairy {
 	background: url('../images/dairy.png') no-repeat center / cover;
 }
-.bg-fruit {
+.bg-grey-fruit {
 	background: url('../images/grey-fruit.png') no-repeat center / cover;
 }
 .bg-grey-veggies {
@@ -222,7 +223,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-mrpb {
 	background: url('../images/mrpb.png') no-repeat center;
 }
-
+#mood {
+	background: url('../images/mrpb.png') no-repeat center;
+}
 .bg-banner {
 	background: url('../images/banner.png') no-repeat center;
 }
@@ -586,7 +589,7 @@ label.normal {
 }
 input.normal {
 	display: block;
-    width: calc(100% - 22px);
+    width: calc(90%);
     font-family: inherit;
     line-height: 1.5;
     outline: 0;
@@ -594,10 +597,36 @@ input.normal {
     border: 1px solid #e7e7e7;
     border-radius: 0;
     box-shadow: none;
+    display: inline;
 }
+
+img.normal {
+	display: block;
+    width: calc(90%);
+    font-family: inherit;
+    line-height: 1.5;
+    padding: 10px;
+    box-shadow: none;
+    display: inline;
+}
+
+input.normalpad {
+	display: block;
+    width: calc(90%);
+    font-family: inherit;
+    line-height: 1.5;
+    outline: 0;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 0;
+    box-shadow: none;
+    display:inline; 
+	width: 25%;
+}
+
 select.normal {
 	display: block;
-	width: 100%;
+	width: calc(90%);
 	height: 38px;
 	line-height: 1.5;
 	padding: 10px;
@@ -608,7 +637,7 @@ select.normal {
 }
 textarea.normal {
 	display: block;
-	width: calc(100% - 22px);
+	width: calc(90%);
 	height: 72px;
 	line-height: 1.5;
 	padding: 10px;

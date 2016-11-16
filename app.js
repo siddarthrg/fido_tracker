@@ -10,6 +10,8 @@ var handlebars = require('express3-handlebars')
 
 var home = require('./routes/home');
 var feed = require('./routes/feed');
+var feed_save = require('./routes/feed_save');
+var vet = require('./routes/vet');
 var profile = require('./routes/profile');
 var shop = require('./routes/shop');
 var history = require('./routes/history');
@@ -56,6 +58,7 @@ if ('development' == app.get('env')) {
 app.get('/', home.view);
 app.get('/home', home.view);
 app.get('/feed', feed.view);
+app.get('/vet', vet.view);
 app.get('/profile',profile.view);
 app.get('/shop',shop.view);
 app.get('/history',history.view);
@@ -66,6 +69,9 @@ app.get('/signup',signup.view);
 app.get('/choosepet',pet_choice.view);
 app.get('/namepet',pet_name.view);
 app.get('/settings',settings.view);
+
+app.post('/feed_save', feed_save.view);
+
 //app.get('/project/:id', project.projectInfo);
 // Example route
 // app.get('/users', user.list);

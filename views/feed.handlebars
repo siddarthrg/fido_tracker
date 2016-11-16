@@ -26,50 +26,69 @@
           <a class="mdl-button mdl-js-button mdl-button--icon" href="/home">
             <i class="material-icons">arrow_back</i>
           </a>
-		  
-       <img src="images/select_group.jpg" alt="">
+
+<!-- Feed details form -->
+<form action="/feed_save" method="post">
+
+<p class="title margin-top-16">What did you eat?</p>
+            <p>
+              <label for="firstname" class="normal">Name of Food</label>
+              <input type="text" class="normal" name="food" id="firstname" placeholder="" value="">
+            </p>
+
+<p class="title margin-top-16">Date Consumed</p>
+            <p>
+              <label for="firstname" class="normal">MM/DD/YYYY</label>
+              <input type="text" class="normalpad" name="mm" id="month" placeholder="" value="">
+              <input type="text" class="normalpad" name="dd" id="date" placeholder="" value="">
+              <input type="text" class="normalpad" name="yy" id="year" placeholder="" value="">
+            </p>
 
 			<p class="title margin-top-16">Select food group</p>
 			<p>
-              <label class="normal">What kind of food? <span>*</span></label>
-              <select class="normal">
-                <option value="–">--</option>
-                <option value="Asia">Grains</option>
-                <option value="Africa">Vegetables</option>
-                <option value="North America">Fruits</option>
-                <option value="South America">Dairy</option>
-                <option value="Antarctica">Protein</option>
-               
-              </select>
+              <label class="normal"><img class="normal" src="images/select_group.jpg" alt=""></label>
+
+              <input type="checkbox" name="ateGrains" value=1>Grains</input>
+              <input type="checkbox" name="ateVegetables" value=1>Vegetables</input>
+              <input type="checkbox" name="ateFruits" value=1>Fruits</input>
+              <input type="checkbox" name="ateDiary" value=1>Diary</input>
+              <input type="checkbox" name="ateProtein" value=1>Protein</input>
             </p>
+
        <p class="title margin-top-16">Enter Amount</p>
             <p>
-              <label for="firstname" class="normal">Calories <span>*</span></label>
-              <input type="text" class="normal" name="firstname" id="firstname" placeholder="" value="">
+              <label for="calories" class="normal">Calories</label>
+              <input type="text" class="normal" name="cal" id="firstname" placeholder="" value="">
             </p>
 			<p class="title margin-top-16">Select Mood Experienced</p>
 			<p>
-              <label class="normal">How are you feeling? <span>*</span></label>
-              <select class="normal">
-                <option value="–">--</option>
-                <option value="Asia">Happy ^_^</option>
-                <option value="Africa">Satisfied :)</option>
-                <option value="North America">Apathetic :|</option>
-                <option value="South America">Sad :(</option>
-                <option value="Antarctica">Disgusted >_<</option>
-               
+              <label class="normal">How are you feeling?</label>
+              <select class="normal" name="mood">
+                <option value="0">--</option>
+                <option value="5">Happy ^_^</option>
+                <option value="4">Satisfied :)</option>
+                <option value="3">Apathetic :|</option>
+                <option value="2">Sad :(</option>
+                <option value="1">Disgusted >_<</option>
               </select>
             </p>
         <p class="title margin-top-32">Additional information</p>
-            <textarea name="message" class="normal" id="message" placeholder="Some notes..." rows="2" cols="5"></textarea>
+            <textarea name="info" class="normal" id="message" placeholder="Some notes..." rows="2" cols="5"></textarea>
+		 <input type="submit" id="submitBtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border full margin-top-32" value="OM NOM!"></input>
+</form>
 
-			<a href="/vet" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border full margin-top-32">
-              OM NOM
-            </a>
+
       </main>
     </div>
 
 
+  <!-- Script to get current date -->
+  <script type="text/javascript">
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.getMonth()+1; //January is 0! That's why we're adding 1 to make Jan == 1
+    var year = today.getFullYear();
+  </script>
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/js/jquery.animsition.js"></script>

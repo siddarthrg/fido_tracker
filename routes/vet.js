@@ -21,13 +21,12 @@ var year = today.getFullYear();
 var avgMood = 0; 
 var count = 0;
 
-// vars to check whether a food group has been eaten or not
-var didEatGrains = 0;
-var didEatFruit = 0;
-var didEatDairy = 0;
-var didEatProtein = 0;
-var didEatVeggies = 0;
-
+// Vars to check whether a food group has been eaten or not
+var ateGrains = 0;
+var ateFruit = 0;
+var ateDairy = 0;
+var ateProtein = 0;
+var ateVeggies = 0;
 
 // ERROR: Not calculating last entry in json
 for (var i=0; i<logData.length; i++){
@@ -48,21 +47,25 @@ if(count && count == 0){
 }
 
 // Check whether a food group has been eaten
-for (var j=0; j<logData.length; j++){
-	if(logData[i].ateGrains == 1) {
-		didEatGrains = 1;
-	}
-	if(logData[i].ateProtein == 1) {
-		didEatProtein = 1;
-	}
-	if(logData[i].ateFruit == 1) {
-		didEatFruit = 1;
-	}
-	if(logData[i].ateDairy == 1) {
-		didEatDairy = 1;
-	}
-	if(logData[i].ateVeggies == 1) {
-		didEatVeggies = 1;
+for (var i=0; i<logData.length; i++){
+	if (logData[i].mm == month){
+		if(logData[i].dd == day){
+			if(logData[i].ateGrains == 1) {
+				ateGrains = 1;
+			}
+			if(logData[i].ateProtein == 1) {
+				ateProtein = 1;
+			}
+			if(logData[i].ateFruit == 1) {
+				ateFruit = 1;
+			}
+			if(logData[i].ateDairy == 1) {
+				ateDairy = 1;
+			}
+			if(logData[i].ateVeggies == 1) {
+				ateVeggies = 1;
+			}
+		}
 	}
 }
 
@@ -73,11 +76,8 @@ userData[0].mood = avgMood;
 console.log('Averge mood = ' + avgMood);
 
 // Add food groups eaten to userData
-userData[0].ateGrains = didEatGrains;
-userData[0].ateProtein = didEatProtein;
-userData[0].ateFruit = didEatFruit;
-userData[0].ateDairy = didEatDairy;
-userData[0].ateVeggies = didEatVeggies;
-
-
-
+userData[0].ateGrains = ateGrains;
+userData[0].ateProtein = ateProtein;
+userData[0].ateFruit = ateFruit;
+userData[0].ateDairy = ateDairy;
+userData[0].ateVeggies = ateVeggies;
