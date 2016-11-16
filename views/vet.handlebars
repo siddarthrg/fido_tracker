@@ -50,7 +50,7 @@
       
             <div class="card-autor">
               <p>Remaining food groups:</p>             
-              <div class="photo-add"g>
+              <div class="photo-add">
                 <div class="square-user" id="icon_grains" src="images/grey_grains"></div>
                 <div class="square-user" id="icon_veggies" src="images/grey_veggies"></div>
                 <div class="square-user" id="icon_fruit" src="images/grey_fruit"></div>
@@ -116,15 +116,15 @@
   <script type="text/javascript">
     var avgMood = {{userData.0.mood}};
       if(avgMood == 5)
-        document.getElementById("vetComment").src = "Great job! Mr.Peanutbutter is in excellent health!";
+        document.getElementById("vetComment").innerHTML = "Great job! Mr.Peanutbutter is in excellent health!";
       else if(avgMood == 4)
-        document.getElementById("vetComment").src = "Mr. Peanutbutter is quite happy!";
+        document.getElementById("vetComment").innerHTML = "Mr. Peanutbutter is quite happy!";
       else if(avgMood == 3)
-        document.getElementById("vetComment").src = "Mr.Peanutbutter seems well.";
+        document.getElementById("vetComment").innerHTML = "Mr. Peanutbutter seems well.";
       else if(avgMood == 2)
-        document.getElementById("vetComment").src = "Mr.Peanutbutter is feeling sad!";
+        document.getElementById("vetComment").innerHTML = "Mr. Peanutbutter is feeling sad!";
       else 
-        document.getElementById("vetComment").src = "Oh no! Mr.Peanutbutter is feeling disgusted! What have you been eating recently?";
+        document.getElementById("vetComment").innerHTML = "Oh no! Mr. Peanutbutter is feeling disgusted! What have you been eating recently?";
   </script>
 
 
