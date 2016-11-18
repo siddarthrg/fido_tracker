@@ -60,7 +60,7 @@ app.get('/', home.view);
 app.get('/home', home.view);
 app.get('/feed', feed.view);
 app.get('/vet', vet.view);
-app.get('/vetp', vet.view);
+app.get('/vetp', vetp.view);
 app.get('/profile',profile.view);
 app.get('/shop',shop.view);
 app.get('/history',history.view);
