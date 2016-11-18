@@ -5,8 +5,30 @@ exports.view = function(req, res){
 	// Import json data
 	var logData = require("../data/log.json");
 
+	// Set ateFoodGroup to numerical values
+	var ateGrains;
+	if(req.body.ateGrains == ""){ateGrains = 0;}
+	else ateGrains = 1; 
+
+	var ateFruit;
+	if(req.body.ateFruit == ""){ateFruit = 0;}
+	else ateFruit = 1; 
+
+	var ateDairy;
+	if(req.body.ateDairy == ""){ateDairy = 0;}
+	else ateDairy = 1; 
+
+	var ateProtein;
+	if(req.body.ateProtein == ""){ateProtein = 0;}
+	else ateProtein = 1; 
+
+	var ateVeggies;
+	if(req.body.ateVeggies == ""){ateVeggies = 0;}
+	else ateVeggies = 1; 
+	
+	// Creat new JSON and append to log
 	var newLog = {
-		"id": logData.length + 1, // Ask how to index this
+		"id": logData.length + 1, 
 
 		"name": req.body.food,
 
@@ -19,11 +41,11 @@ exports.view = function(req, res){
 		"info": req.body.info,
 		"image": "public/images/food/oj.jpg",
 
-		"ateGrains": parseInt(req.body.ateGrains),
- 		"ateFruit": parseInt(req.body.ateFruit),
- 		"ateVeggies": parseInt(req.body.ateVeggies),
- 		"ateProtein": parseInt(req.body.ateProtein),
- 		"ateDairy": parseInt(req.body.ateDairy)
+		"ateGrains": ateGrains,
+ 		"ateFruit": ateFruit,
+ 		"ateVeggies": ateVeggies,
+ 		"ateProtein": ateProtein,
+ 		"ateDairy": ateDairy
 	}
 
 	logData.push(newLog);
