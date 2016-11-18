@@ -30,7 +30,7 @@ exports.view = function(req, res){
 	var newData = JSON.stringify(logData);
 	
 	var fs = require('fs');
-	fs.writeFile("data/test.json",newData, function(err) {
+	fs.writeFile("data/log.json",newData, function(err) {
 	    if(err) {
 	        return console.log(err);
 	    }
