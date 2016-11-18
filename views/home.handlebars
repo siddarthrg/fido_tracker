@@ -107,14 +107,12 @@
                       
                       	
 							
-							<h6>Mr. Peanutbutter</h6>
+							<h6>{{userData.0.petname}}</h6>
                       	
                                               
-             		  <h6><font color="#FFFFFF">MOOD: Happy  |  COINS: 200</font></h6>
+             		  <h6 id="dogStatus"><font color="#FFFFFF">mood/coins</font></h6>
                       <h5><font color="#FFFFFF">– What have you eaten today? –</font></h5>
-                      <a href="/feed" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary margin-bottom-16">
-                        FEED PET
-                      </a>
+                      <a href="/feed" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary margin-bottom-16">FEED PET</a>
 					  <p></p>
 					  <p></p>
                     </div>
@@ -159,19 +157,25 @@
     </script>
 
     <!-- Change Image based on Mood -->
-    <    <!-- Change Image based on Mood -->
     <script>
+    var moodString; 
     var avgMood = {{userData.0.mood}};
-      if(avgMood == 5)
+      if(avgMood == 5){
       document.getElementById("moodImage").style = 'background: url("images/dog_happy.png") no-repeat center';
-      else if(avgMood == 4)
+      moodString = "Happy";}
+      else if(avgMood == 4){
       document.getElementById("moodImage").style = 'background: url("images/dog_satisfied.png") no-repeat center';
-      else if(avgMood == 3)
+      moodString = "Satisfied";}
+      else if(avgMood == 3){
       document.getElementById("moodImage").style = 'background: url("images/dog_apathetic.png") no-repeat center';
-      else if(avgMood == 2)
+      moodString = "Apathetic";}
+      else if(avgMood == 2){
       document.getElementById("moodImage").style = 'background: url("images/dog_sad.png") no-repeat center';
-      else 
+      moodString = "Sad";}
+      else{
       document.getElementById("moodImage").style = 'background: url("images/dog_disgusted.png") no-repeat center';
+      moodString = "Disgusted";}
+      document.getElementById("dogStatus").innerHTML = "MOOD: " + moodString + " |  COINS: " + {{userData.0.coins}};
     </script>
 
 

@@ -2,6 +2,7 @@
 exports.view = function(req, res){
 	// Import json data
 	var logData = require("../data/log.json");
+	
 
 	
 	var newLog = {
@@ -9,20 +10,20 @@ exports.view = function(req, res){
 
 		"name": req.body.food,
 
-		"dd": req.body.dd,
-		"mm": req.body.mm,
-		"year": req.body.yy,
+		"dd": parseint(req.body.dd),
+		"mm": parseint(req.body.mm),
+		"year": parseint(req.body.yy),
 
-		"cal": req.body.cal,
-		"mood": req.body.mood,
-		"info": req.body.info,
+		"cal": parseint(req.body.cal),
+		"mood": parseint(req.body.mood),
+		"info": parseint(req.body.info),
 		"image": "public/images/food/oj.jpg",
 
-		"ateGrains": req.body.ateGrains,
- 		"ateFruit": req.body.ateFruit,
- 		"ateVeggies": req.body.ateVeggies,
- 		"ateProtein": req.body.ateProtein,
- 		"ateDairy": req.body.ateDairy
+		"ateGrains": parseint(req.body.ateGrains),
+ 		"ateFruit": parseint(req.body.ateFruit),
+ 		"ateVeggies": parseint(req.body.ateVeggies),
+ 		"ateProtein": parseint(req.body.ateProtein),
+ 		"ateDairy": parseint(req.body.ateDairy)
 	}
 
 	logData.push(newLog);
