@@ -1,29 +1,29 @@
 // Render home page and json data
+
+
 exports.view = function(req, res){
 	// Import json data
 	var logData = require("../data/log.json");
-	
 
-	
 	var newLog = {
 		"id": logData.length + 1, // Ask how to index this
 
 		"name": req.body.food,
 
-		"dd": parseint(req.body.dd),
-		"mm": parseint(req.body.mm),
-		"year": parseint(req.body.yy),
+		"dd": req.body.dd,
+		"mm": req.body.mm,
+		"year": req.body.yy,
 
-		"cal": parseint(req.body.cal),
-		"mood": parseint(req.body.mood),
-		"info": parseint(req.body.info),
+		"cal": parseInt(req.body.cal),
+		"mood": parseInt(req.body.mood),
+		"info": req.body.info,
 		"image": "public/images/food/oj.jpg",
 
-		"ateGrains": parseint(req.body.ateGrains),
- 		"ateFruit": parseint(req.body.ateFruit),
- 		"ateVeggies": parseint(req.body.ateVeggies),
- 		"ateProtein": parseint(req.body.ateProtein),
- 		"ateDairy": parseint(req.body.ateDairy)
+		"ateGrains": parseInt(req.body.ateGrains),
+ 		"ateFruit": parseInt(req.body.ateFruit),
+ 		"ateVeggies": parseInt(req.body.ateVeggies),
+ 		"ateProtein": parseInt(req.body.ateProtein),
+ 		"ateDairy": parseInt(req.body.ateDairy)
 	}
 
 	logData.push(newLog);
