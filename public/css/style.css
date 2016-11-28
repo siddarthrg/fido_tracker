@@ -1,8 +1,6 @@
 /*------------------------------------------------------------------
-Project: Satellite
-Version: 1.2
-Last change: Added vertical Slider
-Primary use: App & Mobile Website 
+Project: Fido - Digestive Mood Tracker
+Primary use: App & Mobile Mood Tracking
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -764,7 +762,7 @@ textarea.normal {
 .drawer-header {
 	position: relative;
     height: 140px;
-	background: url(../images/user-bg.jpg) center / cover;
+	background: url(../images/photogenic_guy.jpg) center / cover;
 }
 .drawer-header img {
 	width: 48px;
