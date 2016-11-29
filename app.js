@@ -9,7 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var home = require('./routes/home');
-var homes = require('./routes/homes');
+//var homes = require('./routes/homes');
 var feed = require('./routes/feed');
 var feed_save = require('./routes/feed_save');
 var vet = require('./routes/vet');
@@ -59,7 +59,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', home.view);
 app.get('/home', home.view);
-app.get('/homes', homes.view);
+//app.get('/homes', homes.view);
 app.get('/feed', feed.view);
 app.get('/vet', vet.view);
 app.get('/vetp', vetp.view);
