@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Fido - Shop</title>
+    <title>Fido - Home</title>
     <meta name="description" content="">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -75,33 +75,11 @@
 
           
 
-          <div class="page-header bg-white">
-            <div class="breadcrumb">
-             
-            </div>
-            <h1 class="page-title">Shop</h1>
-          </div>
-
-          <div class="container padding-top-0">
-            <img class="margin-bottom-16" src="images/product.jpg" alt="">
+          <div class="page-header bg-blog">
             
-            <h1>Shiba Inu Pet</h1>
-            <p>Swag out your diet tracking with the coolest dog breed on the planet.</p>
-            <span class="price mdl-color-text--accent">100 Coins</span>
-            <a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
-              BUY
-            </a>
           </div>
 
-          <div class="container padding-top-64">
-            <img class="margin-bottom-16" src="images/product1.jpg" alt="">
-           
-            <h1>Cheat Day</h1>
-            <p>You've been such a diligent diner, you should treat yourself to a Cheat Day! The next unhealthy item you feed your pet will not have adverse side effects.</p>
-            <p class="light-text margin-bottom-0"><span class="price not-avaliable">$129.00</span> - Out of stock</p>
-            <a href="product.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent border">
-
-          </div>
+          
 
         </main>
       </div>
@@ -114,5 +92,26 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/function.js"></script>
+    <!-- Change Image based on Mood -->
+    <script>
+    var moodString; 
+    var avgMood = {{userData.0.mood}};
+      if(avgMood == 5){
+      document.getElementById("moodImage").style = 'background: url("images/dog_happy.png") no-repeat center';
+      moodString = "Happy";}
+      else if(avgMood == 4){
+      document.getElementById("moodImage").style = 'background: url("images/dog_satisfied.png") no-repeat center';
+      moodString = "Satisfied";}
+      else if(avgMood == 3){
+      document.getElementById("moodImage").style = 'background: url("images/dog_apathetic.png") no-repeat center';
+      moodString = "Apathetic";}
+      else if(avgMood == 2){
+      document.getElementById("moodImage").style = 'background: url("images/dog_sad.png") no-repeat center';
+      moodString = "Sad";}
+      else{
+      document.getElementById("moodImage").style = 'background: url("images/dog_disgusted.png") no-repeat center';
+      moodString = "Disgusted";}
+      document.getElementById("dogStatus").innerHTML = "MOOD: " + moodString + " |  COINS: " + {{userData.0.coins}};
+    </script>
   </body>
 </html>

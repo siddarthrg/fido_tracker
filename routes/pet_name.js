@@ -5,4 +5,3 @@
 exports.view = function(req, res){
   res.render('pet_name');
 };
- 
