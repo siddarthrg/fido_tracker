@@ -179,6 +179,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 .bg-blog {
 	background: url('../images/blog.jpg') no-repeat center / cover;
 }
+
+.bg-kitchen {
+	background: url('../images/kitchen.jpg') no-repeat center / cover;
+}
 .bg-product {
 	background: url('../images/product2.jpg') no-repeat center / cover;
 }

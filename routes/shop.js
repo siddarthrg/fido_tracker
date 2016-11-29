@@ -1,5 +1,5 @@
 /*
- * GET home page.
+ * GET shop page.
  */
 
 // Import json
